@@ -46,6 +46,10 @@
               <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
               <?php } ?>
             </form>
+            <div class="text-center">
+              <a href="<?php echo $google_login; ?>" class="btn btn-danger"><i class="fa fa-google"></i> <?php echo $text_login_google; ?></a>
+              <a href="<?php echo $apple_login; ?>" class="btn btn-dark"><i class="fa fa-apple"></i> <?php echo $text_login_apple; ?></a>
+            </div>
           </div>
         </div>
       </div>

@@ -120,10 +120,14 @@ class ControllerAccountLogin extends Controller {
 		$data['text_forgotten'] = $this->language->get('text_forgotten');
 
 		$data['entry_email'] = $this->language->get('entry_email');
-		$data['entry_password'] = $this->language->get('entry_password');
+                $data['entry_password'] = $this->language->get('entry_password');
 
-		$data['button_continue'] = $this->language->get('button_continue');
-		$data['button_login'] = $this->language->get('button_login');
+                $data['button_continue'] = $this->language->get('button_continue');
+                $data['button_login'] = $this->language->get('button_login');
+                $data['text_login_google'] = $this->language->get('text_login_google');
+                $data['text_login_apple'] = $this->language->get('text_login_apple');
+                $data['google_login'] = $this->url->link('account/social_login/google', '', true);
+                $data['apple_login'] = $this->url->link('account/social_login/apple', '', true);
 
 		if (isset($this->session->data['error'])) {
 			$data['error_warning'] = $this->session->data['error'];
